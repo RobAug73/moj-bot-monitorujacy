@@ -14,7 +14,7 @@ def wyslij_maila(tytul):
         "Content-Type": "application/json"
     }
     data = {
-        "from": "onboarding@resend.dev",
+        "from": "Bot onboarding@resend.dev",
         "to": MOJ_EMAIL,
         "subject": "Nowa aktualizacja: Fundusz Modernizacyjny",
         "html": f"<h3>Znaleziono nową informację:</h3><p>{tytul}</p><br><a href='{URL}'>Przejdź do strony</a>"
