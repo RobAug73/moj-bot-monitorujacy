@@ -4,7 +4,7 @@ import os
 
 # KONFIGURACJA
 URL = "https://www.gov.pl/web/funduszmodernizacyjny/aktualnosci2"
-MOJ_EMAIL = "R.AUGUSTYN88@GMAIL.COM"  # <--- WPISZ SWÓJ ADRES TUTAJ
+MOJ_EMAIL = "r.augustyn88@gmail.com"  # <--- WPISZ SWÓJ ADRES TUTAJ
 RESEND_API_KEY = os.getenv("RESEND_API_KEY")
 
 def wyslij_maila(tytul):
