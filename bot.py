@@ -40,3 +40,4 @@ def sprawdz_nowosci():
 
 if __name__ == "__main__":
     sprawdz_nowosci()
+# odswiezenie bota.
