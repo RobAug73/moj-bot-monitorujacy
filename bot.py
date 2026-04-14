@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 
 # Adres strony do monitorowania
-URL = "https://www.gov.pl/web/nfosigw/aktualne-nabory"
+URL = "https://www.gov.pl/web/funduszmodernizacyjny/aktualnosci2"
 
 def sprawdz_nowosci():
     response = requests.get(URL)
