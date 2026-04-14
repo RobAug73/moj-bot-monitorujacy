@@ -1,0 +1,25 @@
+name: Monitor Strony Gov.pl
+
+on:
+  schedule:
+    # Uruchamiaj 3 razy dziennie (np. 08:00, 13:00, 17:00 czasu UTC)
+    - cron: '0 8,13,17 * * *'
+  workflow_dispatch: # Pozwala uruchomić bota ręcznie przyciskiem
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Pobierz kod repozytorium
+        uses: actions/checkout@v3
+
+      - name: Konfiguracja Pythona
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Instalacja bibliotek
+        run: pip install requests beautifulsoup4
+
+      - name: Uruchom bota
+        run: python bot.py
